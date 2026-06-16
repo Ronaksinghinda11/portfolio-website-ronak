@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ronak Singh Inda - Computer Science Engineer | Full-Stack Developer | Portfolio" />
+  <meta name="keywords" content="Ronak Singh Inda, Software Engineer, Full Stack Developer, React, Node.js, Portfolio" />
+  <title>Ronak Singh Inda | Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fragment+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Noise Overlay -->
+  <div class="noise"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>RSI<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+        <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+        <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+        <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-orbs">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-tag reveal-up">
+        <span class="dot pulse"></span>
+        Available for opportunities
+      </div>
+      <h1 class="hero-name reveal-up delay-1">
+        Ronak Singh<br /><span class="gradient-text">Inda</span>
+      </h1>
+      <p class="hero-role reveal-up delay-2">
+        <span class="typed-text" id="typedText"></span>
+        <span class="cursor-blink">|</span>
+      </p>
+      <p class="hero-desc reveal-up delay-3">
+        Computer Science Engineer crafting scalable full-stack solutions,
+        engineering RESTful APIs, and solving complex algorithmic challenges.
+      </p>
+      <div class="hero-cta reveal-up delay-4">
+        <a href="#projects" class="btn btn-primary">
+          <span>View Projects</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+      <div class="hero-stats reveal-up delay-5">
+        <div class="stat">
+          <span class="stat-num" data-count="140">0</span><span>+</span>
+          <p>Problems Solved</p>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-count="1566">0</span>
+          <p>LeetCode Rating</p>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-count="3">0</span><span>+</span>
+          <p>Projects Built</p>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-indicator">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Scroll down</span>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">01 / About</span>
+        <h2 class="section-title">Who I Am</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-image-wrap reveal-left">
+          <div class="about-image-frame">
+            <div class="about-avatar">
+              <div class="avatar-inner">
+                <span>RS</span>
+              </div>
+              <div class="avatar-ring ring-1"></div>
+              <div class="avatar-ring ring-2"></div>
+            </div>
+            <div class="about-card-float card-float-1">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              <span>Full-Stack Dev</span>
+            </div>
+            <div class="about-card-float card-float-2">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+              <span>QA Engineer</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-text reveal-right">
+          <h3>Building things that matter</h3>
+          <p>
+            I'm a <strong>Computer Science Engineering student</strong> at R.N. Shetty Institute of Technology, Bengaluru,
+            passionate about building products from concept to deployment. I thrive at the intersection of
+            clean code, thoughtful architecture, and great user experience.
+          </p>
+          <p>
+            Currently interning as an <strong>SDE at Firedesk</strong>, where I engineer scalable Node.js REST APIs
+            and design normalized PostgreSQL schemas. Previously, I worked as a QA Intern building
+            end-to-end test automation with Playwright and TypeScript.
+          </p>
+          <p>
+            Outside of work, I actively compete on <strong>LeetCode</strong> (rating 1566, Top 28.5%) and
+            <strong>CodeChef</strong> (2-Star), and love exploring new technologies and open-source projects.
+          </p>
+          <div class="about-meta">
+            <div class="meta-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Bengaluru, Karnataka</span>
+            </div>
+            <div class="meta-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+              <span>B.E. Computer Science (2024–2028)</span>
+            </div>
+            <div class="meta-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              <span>7878054187</span>
+            </div>
+          </div>
+          <div class="about-links">
+            <a href="https://linkedin.com/in/ronaksinghinda/" target="_blank" rel="noopener" class="social-link" id="linkedinLink">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+              LinkedIn
+            </a>
+            <a href="https://github.com/RonakSinghinda" target="_blank" rel="noopener" class="social-link" id="githubLink">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+              GitHub
+            </a>
+            <a href="mailto:ronakinda3@gmail.com" class="social-link" id="emailLink">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              Email
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">02 / Skills</span>
+        <h2 class="section-title">What I Work With</h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-card reveal-up" id="skillLang">
+          <div class="skill-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3>Languages</h3>
+          <div class="skill-tags">
+            <span class="tag">C</span>
+            <span class="tag">C++</span>
+            <span class="tag">Python</span>
+            <span class="tag">Java</span>
+            <span class="tag">JavaScript</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal-up delay-1" id="skillWeb">
+          <div class="skill-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+          </div>
+          <h3>Web Technologies</h3>
+          <div class="skill-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">React.js</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">Express.js</span>
+            <span class="tag">Flask</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal-up delay-2" id="skillTools">
+          <div class="skill-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+          </div>
+          <h3>Tools & Databases</h3>
+          <div class="skill-tags">
+            <span class="tag">GitHub</span>
+            <span class="tag">VS Code</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">PyMySQL</span>
+            <span class="tag">Canva</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal-up delay-3" id="skillConcepts">
+          <div class="skill-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/></svg>
+          </div>
+          <h3>Concepts</h3>
+          <div class="skill-tags">
+            <span class="tag">Data Structures</span>
+            <span class="tag">Algorithms</span>
+            <span class="tag">DBMS</span>
+            <span class="tag">REST APIs</span>
+            <span class="tag">OOP</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal-up delay-4" id="skillSoft">
+          <div class="skill-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+          </div>
+          <h3>Soft Skills</h3>
+          <div class="skill-tags">
+            <span class="tag">Public Speaking</span>
+            <span class="tag">Event Management</span>
+            <span class="tag">Team Leadership</span>
+            <span class="tag">Problem Solving</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal-up delay-5" id="skillCoding">
+          <div class="skill-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+          </div>
+          <h3>Coding Profiles</h3>
+          <div class="coding-profiles">
+            <div class="profile-item">
+              <span class="profile-platform">LeetCode</span>
+              <span class="profile-stat">1566 rating · Top 28.5% · 140+ solved</span>
+            </div>
+            <div class="profile-item">
+              <span class="profile-platform">CodeChef</span>
+              <span class="profile-stat">2-Star (Div 3)</span>
+            </div>
+            <div class="profile-item">
+              <span class="profile-platform">GeeksforGeeks</span>
+              <span class="profile-stat">Active Practitioner</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">03 / Projects</span>
+        <h2 class="section-title">What I've Built</h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card reveal-up" id="projectSafeSearch">
+          <div class="project-card-glow"></div>
+          <div class="project-header">
+            <div class="project-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/RonakSinghinda" target="_blank" rel="noopener" class="project-link" title="View on GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">SafeSearch AI Ecosystem</h3>
+          <p class="project-desc">
+            A privacy-focused platform featuring a Chrome Extension (Manifest V3, JavaScript) and a
+            React.js–Node.js web application for sensitive data protection and content security.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">React.js</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">MongoDB</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">Chrome Extension</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up delay-1" id="projectSolarSight">
+          <div class="project-card-glow"></div>
+          <div class="project-header">
+            <div class="project-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/RonakSinghinda" target="_blank" rel="noopener" class="project-link" title="View on GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Solar-Sight AI</h3>
+          <p class="project-desc">
+            An AI-powered solar energy analysis platform that evaluates location and environmental data
+            to recommend optimal solar panel placement and energy generation strategies.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">React.js</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Machine Learning</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up delay-2" id="projectPortWise">
+          <div class="project-card-glow"></div>
+          <div class="project-header">
+            <div class="project-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/><line x1="2" y1="20" x2="22" y2="20"/></svg>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/RonakSinghinda" target="_blank" rel="noopener" class="project-link" title="View on GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Port-Wise Trade Analytics</h3>
+          <p class="project-desc">
+            A trade analytics platform to analyze port-wise import and export data, enabling users to
+            identify trade patterns, volume trends, and key market insights through interactive dashboards.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">React.js</span>
+            <span class="tech-tag">Data Analytics</span>
+            <span class="tech-tag">Visualization</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="section section-alt" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">04 / Experience</span>
+        <h2 class="section-title">Where I've Worked</h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item reveal-up" id="expSDE">
+          <div class="timeline-marker">
+            <div class="marker-dot"></div>
+            <div class="marker-line"></div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">SDE Intern</h3>
+                <p class="timeline-company">Firedesk · On-Campus</p>
+              </div>
+              <span class="timeline-period">May 2026 – Present</span>
+            </div>
+            <div class="timeline-badge current">Current</div>
+            <ul class="timeline-bullets">
+              <li>Engineered scalable Node.js RESTful APIs and normalized PostgreSQL schemas with robust migrations to support 10+ core domain models (assets, tickets, users).</li>
+              <li>Built responsive authentication UIs and analyzed the existing system architecture to ensure seamless full-stack integration.</li>
+            </ul>
+            <div class="timeline-tech">
+              <span class="tech-mini">Node.js</span>
+              <span class="tech-mini">PostgreSQL</span>
+              <span class="tech-mini">REST APIs</span>
+              <span class="tech-mini">React.js</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-up delay-1" id="expQA">
+          <div class="timeline-marker">
+            <div class="marker-dot"></div>
+            <div class="marker-line"></div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">QA Intern</h3>
+                <p class="timeline-company">Firedesk · On-Campus</p>
+              </div>
+              <span class="timeline-period">Nov 2025 – Apr 2026</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Developed and maintained end-to-end test automation frameworks using Playwright and TypeScript, increasing regression test coverage and reducing manual testing effort.</li>
+              <li>Collaborated with developers and product stakeholders to identify, reproduce, and track defects, contributing to improved product quality and faster release cycles.</li>
+            </ul>
+            <div class="timeline-tech">
+              <span class="tech-mini">Playwright</span>
+              <span class="tech-mini">TypeScript</span>
+              <span class="tech-mini">Test Automation</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Education -->
+      <div class="section-header" style="margin-top: 4rem;">
+        <span class="section-tag">05 / Education</span>
+        <h2 class="section-title">Academic Background</h2>
+      </div>
+      <div class="education-grid">
+        <div class="edu-card reveal-up" id="eduRNS">
+          <div class="edu-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          </div>
+          <div class="edu-content">
+            <h3>R.N. Shetty Institute of Technology</h3>
+            <p class="edu-degree">Bachelor of Engineering in Computer Science</p>
+            <p class="edu-location">Karnataka, India</p>
+            <span class="edu-period">2024 – 2028</span>
+          </div>
+        </div>
+        <div class="edu-card reveal-up delay-1" id="eduBS">
+          <div class="edu-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          </div>
+          <div class="edu-content">
+            <h3>B.S Memorial School</h3>
+            <p class="edu-degree">Central Board of Secondary Education</p>
+            <p class="edu-location">Abu Road, India</p>
+            <span class="edu-period">2024</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-tag">06 / Contact</span>
+        <h2 class="section-title">Let's Connect</h2>
+      </div>
+      <div class="contact-wrap">
+        <div class="contact-text reveal-up">
+          <p>
+            I'm currently open to new opportunities — whether it's a full-time role, internship,
+            or an interesting project to collaborate on. Feel free to reach out!
+          </p>
+          <div class="contact-info">
+            <a href="mailto:ronakinda3@gmail.com" class="contact-item" id="contactEmail">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <span class="contact-label">Email</span>
+                <span class="contact-value">ronakinda3@gmail.com</span>
+              </div>
+            </a>
+            <a href="tel:7878054187" class="contact-item" id="contactPhone">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              </div>
+              <div>
+                <span class="contact-label">Phone</span>
+                <span class="contact-value">+91 7878054187</span>
+              </div>
+            </a>
+            <a href="https://linkedin.com/in/ronaksinghinda/" target="_blank" rel="noopener" class="contact-item" id="contactLinkedIn">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+              </div>
+              <div>
+                <span class="contact-label">LinkedIn</span>
+                <span class="contact-value">linkedin.com/in/ronaksinghinda/</span>
+              </div>
+            </a>
+            <a href="https://github.com/RonakSinghinda" target="_blank" rel="noopener" class="contact-item" id="contactGitHub">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+              </div>
+              <div>
+                <span class="contact-label">GitHub</span>
+                <span class="contact-value">github.com/RonakSinghinda</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">
+        Designed & Built by <strong>Ronak Singh Inda</strong>
+      </p>
+      <p class="footer-sub">
+        I hereby declare that all the information furnished above is true and correct to the best of my knowledge and belief.
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
