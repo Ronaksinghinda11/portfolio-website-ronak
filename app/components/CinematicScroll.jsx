@@ -14,7 +14,7 @@ export default function CinematicScroll() {
   const archRef = useRef(null);
   const projectsRef = useRef(null);
 
-  const [isDesktop, setIsDesktop] = useState(true);
+  const [isDesktop, setIsDesktop] = useState(null); // null = not yet determined (SSR safe)
 
   // Mouse tilt tracking variables
   const mouseCoords = useRef({ x: 0, y: 0 });
@@ -232,6 +232,9 @@ export default function CinematicScroll() {
     card.style.transform = 'scale(1) rotateX(0deg) rotateY(0deg)';
     card.style.boxShadow = 'var(--shadow-card)';
   };
+
+  // --- RENDERING: wait until client has determined device type ---
+  if (isDesktop === null) return null; // SSR / pre-hydration: render nothing to avoid mismatch
 
   // --- RENDERING MOBILE FALLBACK ---
   if (!isDesktop) {
@@ -976,7 +979,7 @@ export default function CinematicScroll() {
       </div>
 
       {/* Global styling overrides for badges and 3D scenes */}
-      <style jsx global>{`
+      <style>{`
         .badge-span {
           display: inline-block;
           font-family: var(--font-mono);

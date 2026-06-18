@@ -221,7 +221,7 @@ export default function Act6_Stats() {
         </div>
       </footer>
 
-      <style jsx global>{`
+      <style>{`
         .contact-info .contact-item {
           display: flex;
           align-items: center;

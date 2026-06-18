@@ -136,7 +136,7 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Menu Drawer CSS */}
-      <style jsx global>{`
+      <style>{`
         @media (max-width: 768px) {
           .navbar .hamburger {
             display: flex !important;

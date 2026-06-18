@@ -328,7 +328,7 @@ export default function Act5_Timeline() {
 
       </div>
 
-      <style jsx global>{`
+      <style>{`
         .timeline-content:hover {
           border-color: var(--border-hover) !important;
           background: var(--bg-card-hover) !important;

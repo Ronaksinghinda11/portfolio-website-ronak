@@ -216,7 +216,7 @@ export default function AboutSection() {
 
       </div>
 
-      <style jsx global>{`
+      <style>{`
         .avatar-ring {
           position: absolute;
           border-radius: 50%;
